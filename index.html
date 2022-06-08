@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./EG Galaxy_Logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ee55e729ee.js" crossorigin="anonymous"></script>
+    <script src="./jquery.min.js"></script>
+    <title>EG | Galaxy</title>
+</head>
+
+<body>
+    <header class="">
+        <section class="back-nav">
+
+            <section class="logo">
+
+
+                <img class="float-top" src="./Val.png" alt="Pubg">
+                <img class="small-logo" src="./Pubg_Logo.png" alt="Pubg">
+                <img class="small-logo" src="./Roblox.png" alt="Roblox">
+                <img class="main-logo" src="./EG Galaxy_Logo.png" alt="logo">
+                <img class="small-logo" src="./BrawlHalla.png" alt="Brawl Halla">
+                <img class="small-logo" src="./BrawlStars_logo.png" alt="Brawl Stars">
+            </section>
+
+        </section>
+    </header>
+
+    <hr class="first-hr">
+
+    <section class="container main-body">
+
+        <section class="card-body col-6 square" id="Last_News">
+            <div class="square-title">
+                <p>اخر الاخبار</p>
+            </div>
+            <p>لا يوجد شئ حاليا</p>
+        </section>
+        <section class="card-body col-6 square" id="Copetitions">
+            <div class="square-title">
+                <p>البطولات</p>
+            </div>
+            <p>لا يوجد شئ حاليا</p>
+        </section>
+
+    </section>
+
+    <footer class="footer">
+
+        <p class="footer-title">Designed by @ <a target="_blanc" href="https://mostafammy.github.io/index/"><span
+                    id="mostafa_FEXH">Mostafa_FEXH</span></a></p>
+    </footer>
+    <hr class="hr-footer">
+
+    <footer class="footer">
+
+        <p class="footer-title">Copyright @ <a href="#"></a><span id="mostafa_FEXH">EG Galaxy Team</span></a></p>
+        <div class="social-icons">
+            <a target="_blanc" href="https://discord.gg/nevaxe"><i class="fa-brands fa-discord"></i></a>
+        </div>
+
+    </footer>
+    <script src="./index.js"></script>
+
+    <script>
+
+        $(document).ready(CheckWindowSize());
+
+        $(window).resize(() => {
+            CheckWindowSize();
+        })
+
+        function CheckWindowSize() {
+
+            if (window.screen.width == 375 && window.screen.height == 667) { $(".logo").css({ "width": "136%" }); }
+
+            if (window.screen.width == 375) { $(".logo").css({ "width": "136%" }); }
+
+            if (window.screen.width == 360 && window.screen.height == 640) { $(".main-logo").css({ "padding-bottom": "97px" }); }
+            if (window.screen.width == 360) { $(".main-logo").css({ "padding-bottom": "97px" }); }
+
+            if (window.screen.width == 320 && window.screen.height == 568) {
+                $(".main-logo").css({ "padding-bottom": "107px" });
+                $(".small-logo").css({ "width": "37%" });
+            }
+            if (window.screen.width == 320) {
+                $(".main-logo").css({ "padding-bottom": "107px" });
+                $(".small-logo").css({ "width": "37%" });
+            }
+
+            if (window.screen.width == 411 && window.screen.height == 731) { $(".float-top").css({ "transform": "translate(126%, -17%)" }); }
+            if (window.screen.width == 411) { $(".float-top").css({ "transform": "translate(126%, -17%)" }); }
+
+            if (window.screen.width == 375 && window.screen.height == 667) {
+                $(".float-top").css({ "transform": "translate(183%, -17%)" });
+                $(".logo").css({ "width": "100%" });
+                $(".main-logo").css({ "padding-bottom": "117px" });
+                $(".small-logo").css({ "width": "40%" })
+            }
+            if (window.screen.width == 375) {
+                $(".float-top").css({ "transform": "translate(183%, -17%)" });
+                $(".logo").css({ "width": "100%" });
+                $(".main-logo").css({ "padding-bottom": "117px" });
+                $(".small-logo").css({ "width": "40%" })
+            }
+            if (window.screen.width == 414 && window.screen.height == 736) {
+                $(".main-logo").css({ "padding-bottom": "157px" });
+                $(".small-logo").css({
+                    "width": "36%",
+                    "padding-left": "10px"
+                });
+                $(".float-top").css({ "transform": "translate(190%, -20%)" });
+            }
+            if (window.screen.width == 414) {
+                $(".main-logo").css({ "padding-bottom": "157px" });
+                $(".small-logo").css({
+                    "width": "36%",
+                    "padding-left": "10px"
+                });
+                $(".float-top").css({ "transform": "translate(190%, -20%)" });
+            }
+
+            if (window.screen.width == 375 && window.screen.height == 812) {
+                $(".small-logo").css({ "width": "38.8%" });
+                $(".float-top").css({ "transform": "translate(123%, -29%)" });
+            }
+            /*if (window.screen.width == 375) {
+                $(".small-logo").css({ "width": "38.8%" });
+                $(".float-top").css({ "transform": "translate(123%, -29%)" });
+            }*/
+
+            if (window.screen.width == 280 && window.screen.height == 653) {
+                $(".main-logo").css({ "padding-bottom": "97px" });
+                $(".float-top").css({ "transform": "translate(83%, -25%)" });
+            }
+            if (window.screen.width == 280) {
+                $(".main-logo").css({ "padding-bottom": "97px" });
+                $(".float-top").css({ "transform": "translate(83%, -25%)" });
+            }
+
+            if (window.screen.width == 411 && window.screen.height == 823) {
+                $(".main-logo").css({ "padding-bottom": "97px" });
+                $(".float-top").css({ "transform": "translate(117%, -27%)" });
+            }
+
+            if (window.screen.width == 411) {
+                $(".main-logo").css({ "padding-bottom": "97px" });
+                $(".float-top").css({ "transform": "translate(117%, -27%)" });
+            }
+
+            if (window.screen.width == 483) {
+                $(".main-logo").css({ "padding-bottom": "97px" });
+                $(".float-top").css({ "transform": "translate(127%, -20%)" });
+            }
+
+            if (window.screen.width == 1200) {
+                $(".main-logo").css({ "padding-bottom": "97px" });
+                $(".float-top").css({ "transform": "translate(207%, -20%)" });
+            }
+
+            if (window.screen.width == 1500) {
+                $(".main-logo").css({ "padding-bottom": "97px" });
+                $(".float-top").css({ "transform": "translate(217%, -20%)" });
+                $(".small-logo").css({ "width": "19%" });
+            }
+
+            if (window.screen.width <= 500) {
+                console.log("s");
+                $("#footer-title").css({"font-size":"15px"});
+                $("#mostafa_FEXH").css({"font-size":"18px"});
+
+            }
+
+            if (window.screen.width >= 500 && window.screen.width < 1200) {
+                $("#footer-title").css({"font-size":"1em"});
+                $("#mostafa_FEXH").css({"font-size":"1.2em"});
+
+            }
+
+            if (window.screen.width >= 1200) {
+                console.log("q");
+                $("#footer-title").css({"font-size":"20px"});
+                $("#mostafa_FEXH").css({"font-size":"23px"});
+                //document.querySelector("#mostafa_FEXH").style.fontSize = "1.3em";
+
+            }
+
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
